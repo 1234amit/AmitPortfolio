@@ -1,5 +1,5 @@
 import work1 from '../../assets/1-project.JPG';
-import work2 from '../../assets/2-project.JPG';
+import work2 from '../../assets/Online-Marketplace.PNG';
 import work3 from '../../assets/3-project.JPG';
 import work4 from '../../assets/4-project.JPG';
 import work5 from '../../assets/5-project.JPG';
@@ -16,8 +16,9 @@ const Menu = [
     {
         id: 2,
         image: work2,
-        name: "Doctor Portal Project Design",
-        language: "React js, Firebase, Express js, Mongo DB",
+        name: "Online Marketplace",
+        language: "Tailwind CSS, Django, sqlite",
+        project: "https://github.com/1234amit/OnlineMarketPlace"
     },
     {
         id: 3,
