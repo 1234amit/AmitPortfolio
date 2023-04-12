@@ -93,4 +93,8 @@
     .home__name{
         font-size: 17px;
     }
+
+    .home__socials{
+        margin-left: 1rem;
+    }
 }
