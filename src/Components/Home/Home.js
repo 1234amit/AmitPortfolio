@@ -14,7 +14,7 @@ const Home = () => {
 
           <HeaderSocials />
 
-          <a href='#contact' className='btn'>Hire Me</a>
+          <a href='https://www.linkedin.com/in/amit-goswami1/' className='btn'>Hire Me</a>
           <ScrollDown />
       </div>
     </section>
