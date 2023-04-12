@@ -44,3 +44,10 @@
 }
 
 /* contact section end here */
+
+@media (max-width:450px){
+    .contact form .box{
+        font-size: .6rem;
+  
+    }
+}
