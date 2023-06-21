@@ -12,7 +12,7 @@ const Menu = [
         image: work7,
         name: "Multivendor Ecommerce Website",
         language: "Python(Django), Tailwind CSS, Javascript, PostgreSQL",
-        project: "https://github.com/1234amit/Full-Ecommerce-frontend"
+        project: "https://github.com/1234amit/multivendorWebsite-django"
     },
     {
         id: 2,
