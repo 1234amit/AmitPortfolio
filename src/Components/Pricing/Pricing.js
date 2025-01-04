@@ -21,7 +21,7 @@ const Pricing = () => {
           <h3 className="price">
             <em>$</em> 70 <span>Month</span>
           </h3>
-          <a href="" className="btn">
+          <a href="https://www.linkedin.com/in/amit-goswami1/" className="btn">
             Get Started
           </a>
         </div>
@@ -37,7 +37,7 @@ const Pricing = () => {
           <h3 className="price">
             <em>$</em> 150 <span>Month</span>
           </h3>
-          <a href="" className="btn">
+          <a href="https://www.linkedin.com/in/amit-goswami1/" className="btn">
             Get Started
           </a>
         </div>
@@ -53,7 +53,7 @@ const Pricing = () => {
           <h3 className="price">
             <em>$</em> 400 <span>Month</span>
           </h3>
-          <a href="" className="btn">
+          <a href="https://www.linkedin.com/in/amit-goswami1/" className="btn">
             Get Started
           </a>
         </div>
