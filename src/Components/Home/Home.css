@@ -1,100 +1,165 @@
-.home__img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 1.5rem;
+/* Overall styling */
+.home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(
+    135deg,
+    #f8f9fa,
+    #e9ecef
+  );  */
+  padding: 0 1.5rem;
 }
 
-.home{
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.intro {
+  max-width: 600px;
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
-.intro{
-    max-width: 540px;
-    /* background-color: antiquewhite; */
-    text-align: center;
+/* Profile image styling */
+.home__img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  border: 5px solid #007bff; /* Profile border color */
+  transition: transform 0.3s ease;
 }
 
-.home__name{
-    font-size: var(--h1-font-size);
-    font-weight: var(--font-bold);
-    margin-bottom: 0.5rem;
+.home__img:hover {
+  transform: scale(1.1); /* Hover effect */
 }
 
-.home__socials{
-    display: flex;
-    column-gap: 1.75rem;
-    margin: 1.5rem 0;
-    margin-left: 4.5rem;
+/* Text styling */
+.home__name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
 }
 
-.home__social-link{
-    color: var(--title-color);
-    font-size: 1.3rem;
-    transition: .3s;
+.home__education {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1.5rem;
 }
 
-.scroll__down{
-    position: absolute;
-    bottom: 2.5rem;
-    left: 0;
-    width: 100%;
+.home__education span {
+  color: #007bff;
+  font-weight: bold;
 }
 
-.home__scroll-name{
-    font-size: var(--small-font-size);
+/* Socials and button */
+.home__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.mouse{
-    border: 2px solid var(--text-color);
-    display: block;
-    height: 1.6rem;
-    width: 1.25rem;
-    margin: auto;
-    margin-top: .75rem;
-    border-radius: 1rem;
-    position: relative;
+.home__social-link {
+  color: #007bff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-@keyframes ani-mouse{
-    0%{
-        top: 29%;
-    }
-    15%{
-        top: 50%;
-    }
-
-    50%{
-        top: 50%;
-    }
-
-    100%{
-        top: 29%;
-    }
+.home__social-link:hover {
+  color: #0056b3;
+  transform: scale(1.2);
 }
 
-.wheel{
-    background-color: var(--title-color);
-    border-radius: 100%;
-    width: 0.25rem;
-    height: 0.25rem;
-    position: absolute;
-    top: .5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: ani-mouse 2s linear infinite;
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-@media (max-width:450px){
-    .home__name{
-        font-size: 17px;
-    }
+.btn:hover {
+  background-color: #0056b3;
+}
 
-    .home__socials{
-        margin-left: 1rem;
-    }
+/* Scroll Down */
+.scroll__down {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #666;
+}
+
+.scroll__down:hover .mouse {
+  border-color: #007bff;
+}
+
+.mouse {
+  border: 2px solid #666;
+  display: block;
+  height: 1.6rem;
+  width: 1.25rem;
+  margin: auto;
+  margin-top: 0.75rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.wheel {
+  background-color: #007bff;
+  border-radius: 100%;
+  width: 0.25rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: ani-mouse 2s linear infinite;
+}
+
+@keyframes ani-mouse {
+  0% {
+    top: 29%;
+  }
+  15% {
+    top: 50%;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 29%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home__name {
+    font-size: 2rem;
+  }
+
+  .home__education {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .home__name {
+    font-size: 1.75rem;
+  }
+
+  .intro {
+    padding: 1.5rem;
+  }
 }
