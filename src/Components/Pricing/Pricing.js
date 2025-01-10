@@ -19,7 +19,7 @@ const Pricing = () => {
           </p>
           <p className="pricing__support">Email Support</p>
           <h3 className="price">
-            <em>$</em> 70 <span>Month</span>
+            <em>$</em> 120 <span>Month</span>
           </h3>
           <a href="https://www.linkedin.com/in/amit-goswami1/" className="btn">
             Get Started
@@ -35,7 +35,7 @@ const Pricing = () => {
           </p>
           <p className="pricing__support">Email and Video Support</p>
           <h3 className="price">
-            <em>$</em> 150 <span>Month</span>
+            <em>$</em> 300 <span>Month</span>
           </h3>
           <a href="https://www.linkedin.com/in/amit-goswami1/" className="btn">
             Get Started
@@ -51,7 +51,7 @@ const Pricing = () => {
           </p>
           <p className="pricing__support">Full Support</p>
           <h3 className="price">
-            <em>$</em> 400 <span>Month</span>
+            <em>$</em> 700 <span>Month</span>
           </h3>
           <a href="https://www.linkedin.com/in/amit-goswami1/" className="btn">
             Get Started

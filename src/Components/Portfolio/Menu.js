@@ -9,6 +9,9 @@ import quiz from "../../assets/quiz  (1).png";
 import kalo from "../../assets/kalu.PNG";
 import hapa from "../../assets/hapa.PNG";
 import ecom from "../../assets/ecom.PNG";
+import appoint1 from "../../assets/1.PNG";
+import appoint2 from "../../assets/2.PNG";
+import appoint3 from "../../assets/3.PNG";
 
 const Menu = [
   {
@@ -26,7 +29,7 @@ const Menu = [
     project: "https://ecnavi.jp/",
   },
   {
-    id: 2,
+    id: 3,
     image: kalo,
     name: "Company Setup Hub Application",
     language: "PHP(Laravel), Tailwind CSS, MySql",
@@ -34,55 +37,64 @@ const Menu = [
   },
 
   {
-    id: 3,
+    id: 4,
     image: hapa,
     name: "Printing Machine Company Application",
     language: "JS(Node js, Express Js, React js), Tailwind CSS, Mongo DB",
     project: "https://www.hapa.ch/en",
   },
+
   {
-    id: 2,
+    id: 5,
+    image: appoint1,
+    name: "Clinic Doctor Appointment Application",
+    language:
+      "JS(Node js, Express Js, React js), Tailwind CSS, Mongo DB, Docker",
+    project: "https://doctor-appointment-one-olive.vercel.app/",
+  },
+  {
+    id: 6,
     image: work7,
     name: "Multivendor Ecommerce Website",
     language: "Python(Django), Tailwind CSS, Javascript, PostgreSQL",
     project: "https://github.com/1234amit/multivendorWebsite-django",
   },
   {
-    id: 2,
+    id: 7,
     image: work1,
     name: "Full Ecommerce Project",
     language: "Python(Django), React js, Redux, Bootstrap",
     project: "https://github.com/1234amit/Full-Ecommerce-frontend",
   },
   {
-    id: 3,
+    id: 8,
     image: work2,
     name: "Online Marketplace",
     language: "Tailwind CSS, Django, sqlite",
     project: "https://github.com/1234amit/OnlineMarketPlace",
   },
   {
-    id: 4,
+    id: 9,
     image: work3,
     name: "Appointment Management System",
     language: "React js, Firebase, Express js, Mongo DB",
   },
   {
-    id: 5,
+    id: 10,
     image: work4,
     name: "BDMUAYTHAI Project Design",
     language: "React js, Bootstrap",
     project: "https://bangladeshmuaythai.netlify.app/",
   },
   {
-    id: 6,
+    id: 11,
     image: work5,
     name: "Sass Project Design",
     language: "SASS, HTML, CSS, Jquery",
     project: "https://sass-full-project-design.netlify.app/",
   },
   {
-    id: 7,
+    id: 12,
     image: work6,
     name: "Coffee Shop Project Design",
     language: "HTML, CSS, Javascript Jquery",

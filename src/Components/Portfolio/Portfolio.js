@@ -13,7 +13,7 @@ const Portfolio = () => {
           const { id, image, name, language, project } = elem;
 
           return (
-            <div className="work__card" key={id}>
+            <a href={project} className="work__card" key={id}>
               <div className="work__thumbnail">
                 <img src={image} alt="" className="work__img" />
                 <div className="work__mask"></div>
@@ -26,7 +26,7 @@ const Portfolio = () => {
                   <span>PROJECT</span>
                 </i>
               </a>
-            </div>
+            </a>
           );
         })}
       </div>
