@@ -50,7 +50,9 @@ const Home = () => {
           >
             Hire Me
           </a>
-          <ScrollDown />
+          <div className="scrollDown">
+            <ScrollDown />
+          </div>
         </div>
       </div>
     </section>
