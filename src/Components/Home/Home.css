@@ -13,14 +13,19 @@
   padding: 0 1.5rem;
 }
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 35 126 / var(--tw-bg-opacity));
+}
+
 .intro {
   max-width: 600px;
   text-align: center;
-  background: white;
+  /* background: white; */
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
 }
 
 /* Profile image styling */
@@ -42,12 +47,12 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: white;
 }
 
 .home__education {
   font-size: 1.2rem;
-  color: #666;
+  color: white;
   margin-bottom: 1.5rem;
 }
 
@@ -98,7 +103,7 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  color: #666;
+  color: white;
 }
 
 .scroll__down:hover .mouse {

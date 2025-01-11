@@ -1,5 +1,10 @@
 .pricing {
-  margin-bottom: 90px !important;
+  /* margin-bottom: 90px !important; */
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 35 126 / var(--tw-bg-opacity));
 }
 
 .pricing__container {

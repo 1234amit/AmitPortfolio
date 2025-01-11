@@ -4,6 +4,11 @@
   padding: 60px 20px;
 }
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 35 126 / var(--tw-bg-opacity));
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

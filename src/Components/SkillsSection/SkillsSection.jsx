@@ -70,9 +70,11 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="skills-section">
+    <section id="skills" className="skills-section bg-primary">
       <div className="container">
-        <h2 className="section-title">My Skills</h2>
+        <h2 className="section-title" style={{ color: "white" }}>
+          My Skills
+        </h2>
         <div className="skills-grid">
           {skills.map((skillGroup, index) => (
             <div key={index} className="skill-card">

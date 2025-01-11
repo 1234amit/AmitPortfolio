@@ -1,8 +1,15 @@
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 35 126 / var(--tw-bg-opacity));
+}
+
 .work__container {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-
+.section__title {
+  color: #fff;
+}
 .work__card {
   position: relative;
   overflow: hidden;
