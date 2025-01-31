@@ -17,7 +17,7 @@
 
 .about__data {
   padding: 1.875rem;
-  background-color: var(--container-color);
+  /* background-color: var(--container-color); */
   box-shadow: var(--shadow);
   /* border-radius: var(--border-radius); */
   grid-template-columns: repeat(2, 1fr);
@@ -25,6 +25,8 @@
   align-items: flex-start;
   position: relative;
   border-radius: 20px;
+  background-color: #2e5f97;
+  color: white;
 }
 
 .about__data::before {
@@ -46,6 +48,7 @@
 
 .about__skills {
   row-gap: 1.25rem;
+  color: #f1f1f1;
 }
 
 .skills__title {
@@ -57,6 +60,7 @@
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  color: #f1f1f1;
 }
 
 .skills__number {
