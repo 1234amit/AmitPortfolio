@@ -1,18 +1,58 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./About.css";
 import Me from "../../assets/logo2.jpg";
 import CV from "../../assets/amitGoswami.pdf";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+  const imgRef = useRef();
+  const dataRef = useRef();
+
+  useEffect(() => {
+    gsap.fromTo(
+      imgRef.current,
+      { opacity: 0, x: -150 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: imgRef.current,
+          start: "top 80%",
+          toggleActions: "play none none reset",
+        },
+      }
+    );
+    gsap.fromTo(
+      dataRef.current,
+      { opacity: 0, x: 150 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: dataRef.current,
+          start: "top 80%",
+          toggleActions: "play none none reset",
+        },
+      }
+    );
+  }, []);
+
   return (
     <section className="about section bg-primary" id="about">
       <div className="container">
         <h2 className="section__title">About Me</h2>
 
         <div className="about__container grid">
-          <img src={Me} alt="" className="about__img" />
+          <img ref={imgRef} src={Me} alt="" className="about__img" />
 
-          <div className="about__data grid">
+          <div ref={dataRef} className="about__data grid">
             <div className="about__info">
               <p className="about__description">
                 I am a Full stack web developer. I have more than 5+ years of

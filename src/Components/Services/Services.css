@@ -1,6 +1,10 @@
 .services__container {
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.875rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  padding: 0;
 }
 
 .bg-primary {
@@ -9,6 +13,13 @@
 }
 
 .services__card {
+  flex: 1 1 300px;
+  min-width: 280px;
+  max-width: 350px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 1.875rem;
   border-radius: 20px;
@@ -59,7 +70,7 @@
 
 @media (max-width: 450px) {
   .services__container {
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
   }
 
   .services__card {

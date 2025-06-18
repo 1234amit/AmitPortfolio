@@ -26,6 +26,9 @@
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   /* border: 1px solid #ddd; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Profile image styling */
@@ -99,7 +102,7 @@
 /* Scroll Down */
 .scroll__down {
   position: absolute;
-  bottom: 2rem;
+  bottom: -9rem;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -159,7 +162,7 @@
   }
 
   .scrollDown {
-    margin-top: 110px;
+    margin-top: 230px;
   }
 }
 
@@ -171,4 +174,16 @@
   .intro {
     padding: 1.5rem;
   }
+}
+
+.split-letter {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.scrollDown {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

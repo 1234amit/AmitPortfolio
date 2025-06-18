@@ -10,7 +10,7 @@ const data = [
     image: image1,
     title: "Software Development",
     description:
-      "I have a 5+ years of Experience of Software Development. In Software Development I used python and javascript. javascript as a frontend(React js) and backend(Node js, Express js) and also i am using python(Django) as a backend. I had also knowlede of Database. i use MySql, MongoDB, Oracal. In version control i used GIT. I have also Docker knowledge",
+      "I have a 6+ years of Experience of Software Development. In Software Development I used python and javascript. javascript as a frontend(React js) and backend(Node js, Express js) and also i am using python(Django) as a backend. I had also knowlede of Database. i use MySql, MongoDB, Oracal. In version control i used GIT. I have also Docker knowledge",
   },
 
   {
@@ -18,7 +18,7 @@ const data = [
     image: image2,
     title: "Web Development",
     description:
-      "I have a 5+ years of Experience of Web Development. In Web Development I used javascript(React js, Node js, Next js), python(Django) and php(Laravel). in frontend web Development i used React js,and Next js. Backend i used Django, Node js, Express js and Laravel.",
+      "I have a 6+ years of Experience of Web Development. In Web Development I used javascript(React js, Node js, Next js), python(Django) and php(Laravel). in frontend web Development i used React js,and Next js. Backend i used Django, Node js, Express js and Laravel.",
   },
 
   {
@@ -26,7 +26,7 @@ const data = [
     image: image3,
     title: "Web Design",
     description:
-      "I have a 5+ years of Experience of web Design. In Web Design I used HTML, CSS, Bootstrap, Tailwind CSS and SASS. Mostly I used SASS and Tailwind css. Into Frontend single page application i am using also React js and Next js.",
+      "I have a 6+ years of Experience of web Design. In Web Design I used HTML, CSS, Bootstrap, Tailwind CSS and SASS. Mostly I used SASS and Tailwind css. Into Frontend single page application i am using also React js and Next js.",
   },
 ];
 
@@ -35,8 +35,7 @@ const Services = () => {
     <section className="services section bg-primary" id="services">
       <div className="container">
         <h2 className="section__title">Services</h2>
-
-        <div className="services__container grid">
+        <div className="services__container flex">
           {data.map(({ id, image, title, description }) => {
             return (
               <div className="services__card" key={id}>
@@ -47,7 +46,7 @@ const Services = () => {
                   style={{ height: "100px" }}
                 />
                 <h3 className="services__title">{title}</h3>
-                <p className="services__description">{description}</p>
+                <p className="services__description" style={{ textAlign: "justify" }}>{description}</p>
               </div>
             );
           })}
